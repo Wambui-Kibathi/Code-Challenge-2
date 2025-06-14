@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+   width: 100%; 
+   min-height: 100vh;
+   background: #ffd1ba;
+   padding: 10px;
+}
+
+.List {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    color: #a83301;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.log {
+    margin-top: 16px;
+    font-size: 16px;
+}
+
+/* Guest name input*/
+#guest-form input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Submit button */
+#guest-form button {
+    padding: 10px 16px;
+    background-color: #f86b29;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#guest-form button:hover {
+    background-color: rgb(63, 63, 63);
+}
+
+/* Guest list*/
+#guest-list {
+    list-style-type: none;
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+#guest-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 16px 16px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* RSVP and Remove buttons */
+#guest-list button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#guest-list button:first-of-type {
+    background-color: #28a745; /* Attending - green */
+    color: white;
+}
+
+#guest-list button:first-of-type:hover {
+    background-color: rgb(63, 63, 63);
+}
+
+#guest-list button:last-of-type {
+    background-color: #dc3545; /* Remove - red */
+    color: white;
+}
+
+#guest-list button:last-of-type:hover {
+    background-color: rgb(63, 63, 63);
+}
+
+/* RSVP toggle class for styling */
+.attending {
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Timestamp log */
+#log {
+    margin-top: 20px;
+    color: #333;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+}

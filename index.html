@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event List Guest Manager</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="List">
+            <h1>Event Guest List Manager</h1>
+            <form id="guest-form">
+                <input type="text" id="guest-name" placeholder="Enter guest name"/>
+                <button type="submit">Submit</button>
+              </form>
+              <div id="log"></div>
+              <ul id="guest-list"></ul>
+              <script src="./src/index.js"></script>
+        </div>
+    </div>
 </body>
 </html>
