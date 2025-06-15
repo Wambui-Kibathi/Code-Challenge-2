@@ -8,19 +8,19 @@ function logSubmit(event) {
     
     if (log) {
         log.textContent = `Form Submitted! Timestamp: ${event.timeStamp}`;
-        setTimeout(() => log.textContent = "", 3000); //clear after 3 seconds
+        setTimeout(() => log.textContent = "", 3000); 
     }
+
     const guestName = input.value.trim();
     if (guestName === "") return;
         
     const li = document.createElement("li");
     li.textContent = guestName;
 
-    // Add time added here
     const now = new Date();
-    const timeString = now.toLocaleTimeString(); // Format: "4:05:21 PM"
+    const timeString = now.toLocaleTimeString(); 
     li.textContent = `${guestName} (Added at ${timeString})`;
-        
+    
     const removeBtn = document.createElement("button");
     removeBtn.textContent = "Remove";
     removeBtn.addEventListener("click", () => li.remove());

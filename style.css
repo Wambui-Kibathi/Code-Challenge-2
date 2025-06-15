@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -27,7 +27,6 @@
     font-size: 16px;
 }
 
-/* Guest name input*/
 #guest-form input[type="text"] {
     width: 70%;
     padding: 10px;
@@ -37,7 +36,6 @@
     font-size: 16px;
 }
 
-/* Submit button */
 #guest-form button {
     padding: 10px 16px;
     background-color: #f86b29;
@@ -53,7 +51,6 @@
     background-color: rgb(63, 63, 63);
 }
 
-/* Guest list*/
 #guest-list {
     list-style-type: none;
     margin-top: 20px;
@@ -71,7 +68,6 @@
     font-size: 16px;
 }
 
-/* RSVP and Remove buttons */
 #guest-list button {
     margin-left: 10px;
     padding: 6px 12px;
@@ -83,7 +79,7 @@
 }
 
 #guest-list button:first-of-type {
-    background-color: #28a745; /* Attending - green */
+    background-color: #28a745; 
     color: white;
 }
 
@@ -92,7 +88,7 @@
 }
 
 #guest-list button:last-of-type {
-    background-color: #dc3545; /* Remove - red */
+    background-color: #dc3545; 
     color: white;
 }
 
@@ -100,13 +96,11 @@
     background-color: rgb(63, 63, 63);
 }
 
-/* RSVP toggle class for styling */
 .attending {
     font-weight: bold;
     color: #28a745;
 }
-
-/* Timestamp log */
+ 
 #log {
     margin-top: 20px;
     color: #333;
